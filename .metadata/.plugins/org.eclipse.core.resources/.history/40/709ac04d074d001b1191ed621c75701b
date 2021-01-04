@@ -1,0 +1,346 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.BevelBorder;
+import javax.swing.JTable;
+import javax.swing.border.LineBorder;
+import java.awt.Color;
+import javax.swing.JScrollPane;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import java.awt.Font;
+import javax.swing.JButton;
+
+public class GUI {
+
+	private JFrame frame;
+	private JTable table;
+	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField textField_3;
+	private JTextField textField_4;
+	private JTextField textField_5;
+	private JTextField textField_6;
+	private JTextField textField_7;
+	private JTextField textField_8;
+	private JTextField textField_9;
+	private JTextField textField_10;
+	private JTextField textField_11;
+	private JTextField textField_12;
+	private JTextField textField_13;
+	private JTextField textField_14;
+	private JTextField textField_15;
+	private JTextField textField_16;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					GUI window = new GUI();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public GUI() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(0, 0, 1470, 800);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
+		panel.setBounds(0, -15, 552, 574);
+		frame.getContentPane().add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Customer ID");
+		lblNewLabel.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lblNewLabel.setBounds(10, 11, 199, 46);
+		panel.add(lblNewLabel);
+		
+		textField = new JTextField();
+		textField.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		textField.setBounds(249, 22, 293, 24);
+		panel.add(textField);
+		textField.setColumns(10);
+		
+		JLabel lblNewLabel_1 = new JLabel("First Name");
+		lblNewLabel_1.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lblNewLabel_1.setBounds(10, 39, 199, 46);
+		panel.add(lblNewLabel_1);
+		
+		textField_1 = new JTextField();
+		textField_1.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		textField_1.setColumns(10);
+		textField_1.setBounds(249, 52, 293, 24);
+		panel.add(textField_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("Surname");
+		lblNewLabel_2.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lblNewLabel_2.setBounds(10, 68, 199, 46);
+		panel.add(lblNewLabel_2);
+		
+		textField_2 = new JTextField();
+		textField_2.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		textField_2.setColumns(10);
+		textField_2.setBounds(249, 79, 293, 24);
+		panel.add(textField_2);
+		
+		JLabel lblNewLabel_3 = new JLabel("Postcode");
+		lblNewLabel_3.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lblNewLabel_3.setBounds(10, 125, 199, 46);
+		panel.add(lblNewLabel_3);
+		
+		textField_3 = new JTextField();
+		textField_3.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		textField_3.setColumns(10);
+		textField_3.setBounds(249, 136, 293, 24);
+		panel.add(textField_3);
+		
+		JLabel lblNewLabel_4 = new JLabel("Mobile No.");
+		lblNewLabel_4.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lblNewLabel_4.setBounds(10, 153, 199, 46);
+		panel.add(lblNewLabel_4);
+		
+		textField_4 = new JTextField();
+		textField_4.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		textField_4.setColumns(10);
+		textField_4.setBounds(249, 164, 293, 24);
+		panel.add(textField_4);
+		
+		JLabel lblNewLabel_5 = new JLabel("Address");
+		lblNewLabel_5.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lblNewLabel_5.setBounds(10, 96, 199, 46);
+		panel.add(lblNewLabel_5);
+		
+		textField_5 = new JTextField();
+		textField_5.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		textField_5.setColumns(10);
+		textField_5.setBounds(249, 107, 293, 24);
+		panel.add(textField_5);
+		
+		JLabel lblNewLabel_6 = new JLabel("Email");
+		lblNewLabel_6.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lblNewLabel_6.setBounds(10, 182, 199, 46);
+		panel.add(lblNewLabel_6);
+		
+		textField_6 = new JTextField();
+		textField_6.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		textField_6.setColumns(10);
+		textField_6.setBounds(249, 193, 293, 24);
+		panel.add(textField_6);
+		
+		JLabel lblGender = new JLabel("Gender");
+		lblGender.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lblGender.setBounds(10, 296, 532, 46);
+		panel.add(lblGender);
+		
+		textField_7 = new JTextField();
+		textField_7.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		textField_7.setColumns(10);
+		textField_7.setBounds(249, 307, 293, 24);
+		panel.add(textField_7);
+		
+		JLabel lblNewLabel_1_1 = new JLabel("Date of Birth");
+		lblNewLabel_1_1.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lblNewLabel_1_1.setBounds(10, 324, 532, 46);
+		panel.add(lblNewLabel_1_1);
+		
+		textField_8 = new JTextField();
+		textField_8.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		textField_8.setColumns(10);
+		textField_8.setBounds(249, 337, 293, 24);
+		panel.add(textField_8);
+		
+		JLabel lblNewLabel_2_1 = new JLabel("Room Number");
+		lblNewLabel_2_1.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lblNewLabel_2_1.setBounds(10, 353, 532, 46);
+		panel.add(lblNewLabel_2_1);
+		
+		textField_9 = new JTextField();
+		textField_9.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		textField_9.setColumns(10);
+		textField_9.setBounds(249, 364, 293, 24);
+		panel.add(textField_9);
+		
+		JLabel lblNewLabel_5_1 = new JLabel("Id proof");
+		lblNewLabel_5_1.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lblNewLabel_5_1.setBounds(10, 381, 532, 46);
+		panel.add(lblNewLabel_5_1);
+		
+		textField_10 = new JTextField();
+		textField_10.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		textField_10.setColumns(10);
+		textField_10.setBounds(249, 392, 293, 24);
+		panel.add(textField_10);
+		
+		JLabel lblNewLabel_3_1 = new JLabel("Checkin");
+		lblNewLabel_3_1.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lblNewLabel_3_1.setBounds(10, 410, 532, 46);
+		panel.add(lblNewLabel_3_1);
+		
+		textField_11 = new JTextField();
+		textField_11.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		textField_11.setColumns(10);
+		textField_11.setBounds(249, 421, 293, 24);
+		panel.add(textField_11);
+		
+		JLabel lblNewLabel_4_1 = new JLabel("Checkout");
+		lblNewLabel_4_1.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lblNewLabel_4_1.setBounds(10, 438, 532, 46);
+		panel.add(lblNewLabel_4_1);
+		
+		textField_12 = new JTextField();
+		textField_12.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		textField_12.setColumns(10);
+		textField_12.setBounds(249, 449, 293, 24);
+		panel.add(textField_12);
+		
+		JLabel lblNewLabel_6_1 = new JLabel("Customer Reference");
+		lblNewLabel_6_1.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lblNewLabel_6_1.setBounds(10, 467, 532, 46);
+		panel.add(lblNewLabel_6_1);
+		
+		textField_13 = new JTextField();
+		textField_13.setFont(new Font("Times New Roman", Font.PLAIN, 20));
+		textField_13.setColumns(10);
+		textField_13.setBounds(249, 478, 293, 24);
+		panel.add(textField_13);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
+		panel_1.setBounds(0, 585, 1444, 176);
+		frame.getContentPane().add(panel_1);
+		panel_1.setLayout(null);
+		
+		JLabel lblNewLabel_2_2 = new JLabel("Tax");
+		lblNewLabel_2_2.setFont(new Font("Times New Roman", Font.BOLD, 25));
+		lblNewLabel_2_2.setBounds(35, 11, 199, 63);
+		panel_1.add(lblNewLabel_2_2);
+		
+		JLabel lblNewLabel_5_2 = new JLabel("Subtotal");
+		lblNewLabel_5_2.setFont(new Font("Times New Roman", Font.BOLD, 25));
+		lblNewLabel_5_2.setBounds(35, 63, 199, 46);
+		panel_1.add(lblNewLabel_5_2);
+		
+		JLabel lblNewLabel_3_2 = new JLabel("Total");
+		lblNewLabel_3_2.setFont(new Font("Times New Roman", Font.BOLD, 25));
+		lblNewLabel_3_2.setBounds(35, 107, 199, 46);
+		panel_1.add(lblNewLabel_3_2);
+		
+		textField_14 = new JTextField();
+		textField_14.setBounds(263, 36, 199, 20);
+		panel_1.add(textField_14);
+		textField_14.setColumns(10);
+		
+		textField_15 = new JTextField();
+		textField_15.setBounds(263, 80, 199, 20);
+		panel_1.add(textField_15);
+		textField_15.setColumns(10);
+		
+		textField_16 = new JTextField();
+		textField_16.setBounds(263, 124, 199, 20);
+		panel_1.add(textField_16);
+		textField_16.setColumns(10);
+		
+		JButton btnNewButton = new JButton("Total");
+		btnNewButton.setFont(new Font("Times New Roman", Font.PLAIN, 25));
+		btnNewButton.setBounds(528, 35, 147, 109);
+		panel_1.add(btnNewButton);
+		
+		JButton btnTotal = new JButton("Update");
+		btnTotal.setFont(new Font("Times New Roman", Font.PLAIN, 25));
+		btnTotal.setBounds(696, 32, 147, 109);
+		panel_1.add(btnTotal);
+		
+		JButton btnReset = new JButton("Reset");
+		btnReset.setFont(new Font("Times New Roman", Font.PLAIN, 25));
+		btnReset.setBounds(1058, 32, 147, 109);
+		panel_1.add(btnReset);
+		
+		JButton btnQuery = new JButton("Query");
+		btnQuery.setFont(new Font("Times New Roman", Font.PLAIN, 25));
+		btnQuery.setBounds(870, 32, 147, 109);
+		panel_1.add(btnQuery);
+		
+		JButton btnPrint = new JButton("Print");
+		btnPrint.setFont(new Font("Times New Roman", Font.PLAIN, 25));
+		btnPrint.setBounds(1250, 32, 147, 109);
+		panel_1.add(btnPrint);
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
+		panel_2.setBounds(562, 0, 882, 574);
+		frame.getContentPane().add(panel_2);
+		panel_2.setLayout(null);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(0, 0, 872, 574);
+		panel_2.add(scrollPane);
+		
+		table = new JTable();
+		table.setModel(new DefaultTableModel(
+			new Object[][] {
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+			},
+			new String[] {
+				"Cust. ID", "First Name", "Sur Name", "Address", "Postcode", "Mobile No.", "Email", "Gender", "DOB", "Room No.", "ID proof", "Check in", "Checkout", "Room type"
+			}
+		));
+		table.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
+		scrollPane.setViewportView(table);
+	}
+}

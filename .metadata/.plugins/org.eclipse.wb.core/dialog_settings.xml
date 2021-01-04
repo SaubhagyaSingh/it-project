@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.wb.internal.swing.model.property.editor.models.table.TableModelDialog">
+		<item key="x" value="413"/>
+		<item key="y" value="154"/>
+		<item key="width" value="774"/>
+		<item key="height" value="551"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.model.property.editor.string.StringPropertyDialog">
+		<item key="x" value="535"/>
+		<item key="y" value="257"/>
+		<item key="width" value="530"/>
+		<item key="height" value="346"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.editor.palette.dialogs.ImportArchiveDialog">
+		<item key="x" value="537"/>
+		<item key="y" value="209"/>
+		<item key="width" value="591"/>
+		<item key="height" value="442"/>
+		<list key="HISTORY_JAR_LIST">
+			<item value="C:\Users\SAUBHAGYA\Downloads\New folder (2)\lib\junit-4.6.jar"/>
+			<item value="C:\Users\SAUBHAGYA\Downloads\New folder (2)\lib\jgoodies-looks-2.4.1.jar"/>
+			<item value="C:\Users\SAUBHAGYA\Downloads\New folder (2)\lib\jgoodies-common-1.2.0.jar"/>
+			<item value="C:\Users\SAUBHAGYA\Downloads\New folder (2)\lib\jcalendar-1.4.jar"/>
+		</list>
+	</section>
+</section>

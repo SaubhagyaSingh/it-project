@@ -1,0 +1,25 @@
+
+import java.sql.*;
+import javax.swing.*;
+public class Hoteldata
+{
+public static Connection connectDB()
+{
+	try 
+	{
+
+		Class.forName("org.mysql.JDBC");
+
+		Connection conn = DriverManager.getConnection
+				("jdbc:Mysql:\"C:\\Program Files\\MySQL\\MySQL Workbench 8.0 CE\\data\\data.db\"");
+       JOptionPane.showMessageDialog(null, "connection made");
+		return conn;
+	}
+		catch (Exception e )
+		{
+			JOptionPane.showMessageDialog(null, "connection error");
+		return null;
+		}
+	}
+}	
+
